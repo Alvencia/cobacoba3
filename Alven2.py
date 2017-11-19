@@ -29,7 +29,10 @@ sys.setdefaultencoding('utf-8')
 #album = None
 #image_path = 'tmp/tmp.jpg'
 
-helpMessage ="""Command Member
+helpMessage ="""
+Ada yang saya bisa bantu?
+
+Command Member
 - Creator
 - Alvencia say
 - GrupCreator
@@ -647,7 +650,7 @@ def bot(op):
                     cl.sendText(msg.to,msg.text)
             elif msg.text is None:
                 return
-            elif msg.text in ["Key","help","Help"]:
+            elif msg.text in ["Key alven","help alven","Help Alven","Help alven"]:
 					if wait["lang"] == "JP":
 						cl.sendText(msg.to,helpMessage)
 					else:
