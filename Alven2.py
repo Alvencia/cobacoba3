@@ -34,59 +34,59 @@ Ada yang saya bisa bantu?
 
 Command Member
 - Creator
-- Alvencia say
-- GrupCreator
+- Alven say
+- GroupCreator
 - .music  *Not work*
-=> .Youtube *Not work*
+- .Youtube *Not work*
 
 Command Creator
-=> Admin add @
-=> Admin remove @
-=> Adminlist
-=> InviteMeTo:
+- Admin add @
+- Admin remove @
+- Adminlist
+- InviteMeTo:
 
-!Command Admin!
-=> Id
-=> Mid
-=> Mid @
-=> Me
-=> Urloff
-=> Urlon
-=> Ginfo
-=> Cancel
-=> Gn
-=> Cname
-=> Cstatus
-=> Gcreator:inv
-=> Out
-=> Invite
-=> Cn
-=> Gift
-=> Respon
-=> Tagall
-=> Glist
-=> Spam:
-=> Check > Absen
-=> Steal + Mid
-=> Steal @
+*Command Admin*
+- Id
+- Mid
+- Mid @
+- Me
+- Urloff
+- Urlon
+- Ginfo
+- Cancel
+- Gn
+- Cname
+- Cstatus
+- Gcreator:inv
+- Out
+- Invite
+- Cn
+- Gift
+- Respon
+- Tagall
+- Glist
+- Spam:
+- Check > Absen
+- Steal + Mid
+- Steal @
 
-!Command Mimic!
-=> Mimic @
-=> Mimic:add: @
-=> Mimic:del: @
-=> ListTarget
+Command Mimic
+- Mimic @
+- Mimic:add: @
+- Mimic:del: @
+- ListTarget
 
-!CommandPenting!
-=> Guest On/Off
-=> Mad On/Off
-=> Qr On/Off
-=> Ban @ 
-=> Unban @
-=> Kill Ban
-=> Kill @
-=> Nk
-=> Vk
-=> Cleanse
+CommandPenting
+- Guest On/Off
+- Mad On/Off
+- Qr On/Off
+- Ban @ 
+- Unban @
+- Kill Ban
+- Kill @
+- Nk
+- Vk
+- Cleanse
 
 Alvencia
 """
@@ -1945,7 +1945,7 @@ def bot(op):
 				if msg.from_ in admin:
 					ki.sendText(msg.to,"Alven hadir")
 #-----------------------------------------------
-            elif "Riki say " in msg.text:
+            elif "Alven say " in msg.text:
 					bctxt = msg.text.replace("","")
 					ki.sendText(msg.to,(bctxt))
 
@@ -2050,7 +2050,7 @@ def bot(op):
                         except:
                             cl.sendText(msg.to,"Mungkin saya tidak di dalaam grup itu")
 #-----------------------------------------------
-            elif msg.text in ["GrupCreator"]:
+            elif msg.text in ["GroupCreator"]:
               if msg.toType == 2:
                     msg.contentType = 13
                     ginfo = cl.getGroup(msg.to)
@@ -2468,9 +2468,9 @@ def autolike():
 				if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
 					try:    
 						cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-						cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By Riki Street Punk")
+						cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By Alven Street Punk")
 						kk.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-						kk.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By Riki Street Punk")
+						kk.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By Alven Street Punk")
 						print "DiLike"
 					except:
 							pass
